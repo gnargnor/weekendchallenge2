@@ -19,7 +19,7 @@ body {
   clear: left;
   font-size: 28px;
   line-height: 40px;
-  font-family: sans-serif;
+  font-family: monospace;
   text-align: right;
 }
 .calcButton {
@@ -27,6 +27,7 @@ body {
   color: white;
   height:40px;
   width: 40px;
+  border-radius: 50%;
   text-align: center;
   line-height: 40px;
   font-family:sans-serif;

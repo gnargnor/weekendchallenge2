@@ -55,6 +55,15 @@ function addEventListeners(){
           firstNumber=false;
           console.log(thingsToSend);
           break;
+        case "C":
+          xInput = "";
+          thingsToSend.x = "";
+          yInput = "";
+          thingsToSend.y = "";
+          thingsToSend.type = "";
+          $('.display').val('0');
+          console.log(thingsToSend);
+          break;
         case "=":
           thingsToSend.y = yInput;
           console.log(thingsToSend);
@@ -144,7 +153,9 @@ function appendOutput(response){
   $('#output').empty();
   $('.display').val(response);
   yInput = "";
-  xInput = "";
+  thingsToSend.y="";
+  thingsToSend.x = response;
+  xInput = response;
   thingsToSend.func = "";
   firstNumber = true;
 }

@@ -1,0 +1,49 @@
+html {
+  background-color: #9d5556;
+
+}
+body {
+  color:white;
+  background-color: inherit;
+  text-align: center;
+}
+.display {
+  background-color: black;
+  color: white;
+  width: 172px;
+  height: 40px;
+  margin: 2px;
+  padding: 0;
+  border: none;
+  float: left;
+  clear: left;
+  font-size: 28px;
+  line-height: 40px;
+  font-family: sans-serif;
+  text-align: right;
+}
+.calcButton {
+  background-color: black;
+  color: white;
+  height:40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-family:sans-serif;
+  font-size: 28px;
+  margin: 2px;
+  float: left;
+
+}
+
+#calcButtons {
+  background-color: #366166;
+  width: 180px;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center;
+}
+
+.clear {
+  clear: left;
+}

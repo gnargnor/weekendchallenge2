@@ -19,24 +19,30 @@ app.get('/calc/:x/:y/:func', function(req, res){
   switch(req.params.func){
     case "add":
       returnCalc = x + y;
-      returnCalc = "" + x + " + " + y + " = " + returnCalc.toString();
+      returnCalc = returnCalc.toString();
+      returnCalc2 = "" + x + " + " + y + " = " + returnCalc.toString();
       break;
     case "subtract":
       returnCalc = x - y;
-      returnCalc = "" + x + " - " + y + " = " + returnCalc.toString();
+      returnCalc = returnCalc.toString();
+      returnCalc2 = "" + x + " - " + y + " = " + returnCalc.toString();
       break;
     case "multiply":
       returnCalc = x * y;
-      returnCalc = "" + x + " * " + y + " = " + returnCalc.toString();
+      returnCalc = returnCalc.toString();
+      returnCalc2 = "" + x + " * " + y + " = " + returnCalc.toString();
       break;
     case "divide":
       returnCalc = x / y;
-      returnCalc = "" + x + " / " + y + " = " + returnCalc.toString();
+      returnCalc = returnCalc.toString();
+      returnCalc2 = "" + x + " / " + y + " = " + returnCalc.toString();
       break;
     default:
       console.log('you broke it');
 
   }
+  console.log(returnCalc);
+  console.log(returnCalc2);
   res.send(returnCalc);
 });
 

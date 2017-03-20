@@ -7,6 +7,11 @@ body {
   background-color: inherit;
   text-align: center;
 }
+
+h1 {
+  font-family: monospace;
+
+}
 .display {
   background-color: black;
   color: white;
